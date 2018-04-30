@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        // CHALLENGE 1
+        let students = [
+            {name: 'Remy', cohort: 'Jan'},
+            {name: 'Genevieve', cohort: 'March'},
+            {name: 'Chuck', cohort: 'Jan'},
+            {name: 'Osmund', cohort: 'June'},
+            {name: 'Nikki', cohort: 'June'},
+            {name: 'Boris', cohort: 'June'}
+        ];
+        function printCohort(my_arr){
+            for(x in my_arr){
+                console.log("Name: "+students[x]['name']+", Cohort: "+students[x]['cohort'])
+            }
+        }
+        printCohort(students)
+        // CHALLENGE 2
+        let users = {
+            employees: [
+                {'first_name':  'Miguel', 'last_name' : 'Jones'},
+                {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+                {'first_name' : 'Nora', 'last_name' : 'Lu'},
+                {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+            ],
+            managers: [
+            {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+            {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+            ]
+        };
+        function printEmployeesManagers(my_dict){
+            console.log('EMPLOYEES')
+            for(x in my_dict['employees']){
+                var idx = +x + 1
+                console.log(idx+" - "+my_dict['employees'][x]['last_name']+", "+my_dict['employees'][x]['first_name']+" - "+(my_dict['employees'][x]['first_name'] + my_dict['employees'][x]['last_name']).length)
+            }
+            console.log('MANAGERS')
+            for(x in my_dict['managers']){
+                var idx = +x + 1
+                console.log(idx+" - "+my_dict['managers'][x]['last_name']+", "+my_dict['managers'][x]['first_name']+" - "+(my_dict['managers'][x]['first_name'] + my_dict['managers'][x]['last_name']).length)
+            }
+        }
+        printEmployeesManagers(users)
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
