@@ -2,6 +2,8 @@ $(document).ready(function(){
     var score = 0;
     var answer = "";
     var questions = 9;
+    var difficulty;
+    var category;
     // MUSIC EASY
     $('.category-point-box').click(function(){
         if(answer == ""){
@@ -28,8 +30,6 @@ $(document).ready(function(){
         }
     }
     $(document).on('click', '.answer-btn', function(){
-        difficulty = $(this).attr('difficulty')
-        category = $(this).attr('category')
         if(this.value === answer){
             if(difficulty == 'easy'){
                 score += 100;
@@ -52,14 +52,14 @@ $(document).ready(function(){
         $('.'+category+'-'+difficulty+'-answered').slideDown();
     })
     $(document).on('click', '#reset', function(){
-        if(questions === 0){
+        // if(questions === 0){
             $('.category-question-answered').hide();
             $('.category-trivia-box').hide();
             $('.category-point-box').show();
             $('.category-trivia-box').html("");
-        }
-        else {
-            alert('You need to answer all available questions before loading new questions.')
-        }
+        // }
+        // else {
+        //     alert('You need to answer all available questions before loading new questions.')
+        // }
     })
 })
