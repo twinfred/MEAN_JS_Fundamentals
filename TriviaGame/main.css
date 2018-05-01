@@ -1,0 +1,91 @@
+/* MY CSS */
+body {
+    margin: 0px;
+}
+#wrapper {
+    width: 1070px;
+    margin: 0 auto;
+    text-align: center;
+}
+h1, h2, h3, p, button, div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header {
+    background-color: lightgray;
+    padding: 1px 0px 15px 0px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+button {
+    color: white;
+    background-color: darkblue;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px 8px;
+    box-shadow: 3px 3px 3px grey;
+}
+#categories {
+    background-color: purple;
+}
+.category-col {
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-bottom: 80px;
+}
+.category-name {
+    color: white;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.category-point-box, .category-trivia-box {
+    width: 300px;
+    height: 280px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 3px solid lime;
+    border-radius: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 15px black;
+    vertical-align: top;
+}
+.category-point-box {
+    padding: 96px 0px;
+}
+.answer-btn-wrapper {
+    margin: 0px auto;
+    display: block;
+}
+.answer-btn {
+    color: black;
+    background-color: yellow;
+    border: 1px solid white;
+    padding: 3px 8px;
+    box-shadow: 3px 3px 3px darkgray;
+    margin: 5px;
+}
+.category-question-answered {
+    width: 300px;
+    height: 280px;
+    background-color: grey;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+#score-bar {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    background-color: lightgray;
+    padding: 1px 0px 15px 0px;
+    box-sizing: border-box;
+}

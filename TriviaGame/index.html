@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" medis="screen" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Trivia Night</h1>
+            <div id="reset-btn">
+                <button id="reset">Load New Questions</button>
+            </div>
+        </div>
+        <div id="categories">
+            <div class="category-col">
+                <div class="category-name">
+                    <h3>Music</h3>
+                </div>
+                <!-- BOX 1 -->
+                <div class="category-point-box 12-easy-points" difficulty="easy" category="12">
+                    <h2 class="trivia-points">100</h2>
+                </div>
+                <div class="category-trivia-box 12-easy-question" style="display: none"></div>
+                <div class="category-question-answered 12-easy-answered" style="display: none"></div>
+                <!-- BOX 2 -->
+                <div class="category-point-box 12-medium-points" difficulty="medium" category="12">
+                    <h2 class="trivia-points">200</h2>
+                </div>
+                <div class="category-trivia-box 12-medium-question" style="display: none"></div>
+                <div class="category-question-answered 12-medium-answered" style="display: none"></div>
+                <!-- BOX 3 -->
+                <div class="category-point-box 12-hard-points" difficulty="hard" category="12">
+                    <h2 class="trivia-points">300</h2>
+                </div>
+                <div class="category-trivia-box 12-hard-question" style="display: none"></div>
+                <div class="category-question-answered 12-hard-answered" style="display: none"></div>
+            </div>
+            <div class="category-col">
+                <div class="category-name">
+                    <h3>Animals</h3>
+                </div>
+                <!-- BOX 1 -->
+                <div class="category-point-box 27-easy-points" difficulty="easy" category="27">
+                    <h2 class="trivia-points">100</h2>
+                </div>
+                <div class="category-trivia-box 27-easy-question" style="display: none"></div>
+                <div class="category-question-answered 27-easy-answered" style="display: none"></div>
+                <!-- BOX 2 -->
+                <div class="category-point-box 27-medium-points" difficulty="medium" category="27">
+                    <h2 class="trivia-points">200</h2>
+                </div>
+                <div class="category-trivia-box 27-medium-question" style="display: none"></div>
+                <div class="category-question-answered 27-medium-answered" style="display: none"></div>
+                <!-- BOX 3 -->
+                <div class="category-point-box 27-hard-points" difficulty="hard" category="27">
+                    <h2 class="trivia-points">300</h2>
+                </div>
+                <div class="category-trivia-box 27-hard-question" style="display: none"></div>
+                <div class="category-question-answered 27-hard-answered" style="display: none"></div>
+            </div>
+            <div class="category-col">
+                <div class="category-name">
+                    <h3>Geography</h3>
+                </div>
+                <!-- BOX 1 -->
+                <div class="category-point-box 22-easy-points" difficulty="easy" category="22">
+                    <h2 class="trivia-points">100</h2>
+                </div>
+                <div class="category-trivia-box 22-easy-question" style="display: none"></div>
+                <div class="category-question-answered 22-easy-answered" style="display: none"></div>
+                <!-- BOX 2 -->
+                <div class="category-point-box 22-medium-points" difficulty="medium" category="22">
+                    <h2 class="trivia-points">200</h2>
+                </div>
+                <div class="category-trivia-box 22-medium-question" style="display: none"></div>
+                <div class="category-question-answered 22-medium-answered" style="display: none"></div>
+                <!-- BOX 3 -->
+                <div class="category-point-box 22-hard-points" difficulty="hard" category="22">
+                    <h2 class="trivia-points">300</h2>
+                </div>
+                <div class="category-trivia-box 22-hard-question" style="display: none"></div>
+                <div class="category-question-answered 22-hard-answered" style="display: none"></div>
+            </div>
+        </div>
+    </div>
+    <div id="score-bar">
+        <h2 id="score">Score: 0</h2>
+    </div>
+</body>
+</html>
