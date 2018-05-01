@@ -57,6 +57,7 @@ $(document).ready(function(){
             $('.category-trivia-box').hide();
             $('.category-point-box').show();
             $('.category-trivia-box').html("");
+            questions = 9;
         // }
         // else {
         //     alert('You need to answer all available questions before loading new questions.')
